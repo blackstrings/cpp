@@ -12,19 +12,24 @@
 #include "Wheel.h"
 #include <vector>
 
-class Axle  
+namespace car
 {
-public:
-	std::vector<Wheel> wheels;
-	static int wheelsSize;
 
-	Axle();
-	virtual ~Axle();
-	void addWheel(Wheel *wheel);
-	Wheel* Axle::getWheel(int index);
+	class Axle  
+	{
+	public:
+		std::vector<Wheel> wheels;
+		static int wheelsSize;
+
+		Axle();
+		virtual ~Axle();
+		void addWheel(Wheel *wheel);
+		Wheel* Axle::getWheel(int index);
 
 
 
-};
+	};
+
+}
 
 #endif // !defined(AFX_AXLE_H__122A1B67_422B_4939_8384_3B2CE55A5AEF__INCLUDED_)

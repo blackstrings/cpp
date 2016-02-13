@@ -25,14 +25,15 @@ using namespace std;
 bool validateStartQuitInput(string a);
 bool isUserSelectionValid(string x, string y, string gameBoard[][3]);
 void getCurrentPlayerInput(string* curPlayer, string gameBoard[][3]);
-void updateGameBoardDisplay(string a[][3]);
+void updateGameBoardDisplay(string gameBoard[][3]);
+
 bool checkForWinner(string gameBoard[][3], string* currentPlayer);
 bool checkForTie(string gameBoard[][3]);
-void aiSmartSelect(string* curPlayer, string gb[][3]);
+void aiSmartSelect(string* curPlayer, string gameBoard[][3]);
 int aiScanArrayForWinningIndex(string strArr[], string* curPlayer);
 
-bool aiScanRowsForWin(string* curPlayer, string gameboard[][3]);
-void resetGameBoard(string gameboard[][3], int maxRow, int maxCol);
+bool aiScanRowsForWin(string* curPlayer, string gameBoard[][3]);
+void resetGameBoard(string gameBoard[][3], int maxRow, int maxCol);
 
 int main(){
 
@@ -362,6 +363,8 @@ void aiSmartSelect(string* curPlayer, string gb[][3]){
 
 	///END OF TEST
 
+	//this below was the original method where we would scan row by row and col by col
+	//later we found the above implementation was more easier to implement and met our needs
 	/*
 	string colArr[3];
 	string diaArr[3];

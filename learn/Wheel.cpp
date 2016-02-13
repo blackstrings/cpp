@@ -8,18 +8,22 @@
 // Construction/Destruction
 //////////////////////////////////////////////////////////////////////
 
-Wheel::Wheel(){
+namespace car {
 
-}
+	Wheel::Wheel(){
 
-Wheel::Wheel(int size, char color, std::string c)
-{
-	this->size = size;
-	this->color = color;
-	this->c = c;
-}
+	}
 
-Wheel::~Wheel()
-{
+	Wheel::Wheel(int size, char color, std::string c)
+	{
+		this->size = size;
+		this->color = color;
+		this->c = c;
+	}
+
+	Wheel::~Wheel()
+	{
+
+	}
 
 }
