@@ -36,3 +36,6 @@
 *.dsw
 *.ncb
 *.opt
+*.dsp
+*.plg
+learn/Debug/

@@ -3,10 +3,10 @@
 //////////////////////////////////////////////////////////////////////
 #pragma warning(disable:4786)
 #include <iostream>
-/*
+
 #include "Wheel.h"
 #include "Axle.h"
-*/
+
 
 #include <string>
 #include <cctype>
