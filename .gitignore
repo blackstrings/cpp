@@ -1,3 +1,4 @@
+################ github default c template
 # Object files
 *.o
 *.ko
@@ -30,3 +31,8 @@
 
 # Debug files
 *.dSYM/
+
+######### my custom
+.dsw
+.ncb
+.opt
