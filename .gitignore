@@ -33,6 +33,6 @@
 *.dSYM/
 
 ######### my custom
-.dsw
-.ncb
-.opt
+*.dsw
+*.ncb
+*.opt
